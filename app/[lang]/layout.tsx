@@ -6,28 +6,16 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "../globals.css";
 
-export function generateStaticParams() {
-  return i18n.locales.map((lang) => ({ lang }));
-}
-
-export default async function LangLayout({
+export default function RootLayout({
   children,
   params,
 }: {
-  children: ReactNode;
-  params: Promise<{ lang: string }>;
+  children: React.ReactNode;
+  params: { lang: string };
 }) {
-  const { lang: rawLang } = await params;
-  const lang = asLocale(rawLang);
-  const dict = await getDictionary(lang);
-
   return (
-    <html lang={lang}>
-      <body className="bg-paper text-carbon antialiased">
-        <Header lang={lang} dict={dict} />
-        <main>{children}</main>
-        <Footer lang={lang} dict={dict} />
-      </body>
+    <html lang={params.lang}>
+      <body>{children}</body>
     </html>
   );
 }
