@@ -15,7 +15,7 @@ export async function generateMetadata({
 }: {
   params:{ lang: string };
 }): Promise<Metadata> {
-  const { lang: rawLang } = await params;
+  const { lang: rawLang } =  params;
   const lang = asLocale(rawLang);
   const dict = await getDictionary(lang);
   return buildMetadata({
