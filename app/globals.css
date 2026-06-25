@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand tokens — C.A.S. Infinity Group
+     Carbon black, signal amber, stone grey, paper white, blueprint line */
+  --color-carbon: #16181a;
+  --color-carbon-soft: #2a2d30;
+  --color-amber: #f2b705;
+  --color-amber-deep: #d99e00;
+  --color-stone: #6b6d70;
+  --color-stone-light: #9a9c9f;
+  --color-paper: #ffffff;
+  --color-mist: #f4f3f1;
+  --color-blueprint: #d8dce0;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-carbon);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-carbon: var(--color-carbon);
+  --color-carbon-soft: var(--color-carbon-soft);
+  --color-amber: var(--color-amber);
+  --color-amber-deep: var(--color-amber-deep);
+  --color-stone: var(--color-stone);
+  --color-stone-light: var(--color-stone-light);
+  --color-paper: var(--color-paper);
+  --color-mist: var(--color-mist);
+  --color-blueprint: var(--color-blueprint);
+
+  /*
+   * NOTA: en este entorno de desarrollo no hay acceso a fonts.googleapis.com,
+   * por lo que usamos pilas de fuentes de sistema como fallback robusto.
+   * En producción (Vercel u otro hosting con acceso a internet normal) se
+   * puede reactivar next/font/google con Archivo + Inter sin tocar el resto
+   * del código: basta con volver a importar Archivo/Inter en
+   * app/[lang]/layout.tsx y restaurar las variables --font-archivo /
+   * --font-inter en el <html className>.
+   */
+  --font-display: "Archivo Black", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Inter", -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Blueprint corner marks — signature visual motif.
+   A thin technical-drawing crop mark used sparingly on key panels. */
+.blueprint-corners {
+  position: relative;
+}
+
+.blueprint-corners::before,
+.blueprint-corners::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid currentColor;
+  opacity: 0.45;
+}
+
+.blueprint-corners::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.blueprint-corners::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 2.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------
+   Hero image carousel — pure CSS animation (no Tailwind utility
+   classes, no JS animation libs), so it can't silently fail due to
+   a missing Tailwind class. The actual @keyframes percentages are
+   injected per-render from components/hero.tsx via a <style> tag,
+   because they depend on how many slides there are. This class just
+   holds the shared base styles.
+---------------------------------------------------------------- */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation-name: hero-fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
