@@ -11,7 +11,7 @@ export const company = {
     city: "Lelystad",
     country: "Nederland",
   },
-  phone: "+31 (0)00 000 0000", // TODO: confirmar número real
+  phone: "+31 (6) 15478693 ", // TODO: confirmar número real
   email: "info@casinfinitygroup.nl", // TODO: confirmar dominio/email real
   social: {
     linkedin: "#",
