@@ -17,9 +17,9 @@ const icons = [IconNewBuild, IconExtension, IconRenovation, IconMaintenance, Ico
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const { lang: rawLang } =  params;
+  const { lang: rawLang } = await params;
   const lang = asLocale(rawLang);
   const dict = await getDictionary(lang);
   return buildMetadata({
@@ -33,9 +33,9 @@ export async function generateMetadata({
 export default async function ServicesPage({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang: rawLang } =  params;
+  const { lang: rawLang } = await params;
   const lang = asLocale(rawLang);
   const dict = await getDictionary(lang);
 
