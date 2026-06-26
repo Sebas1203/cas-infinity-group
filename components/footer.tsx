@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/i18n-config";
 import type { Dictionary } from "@/lib/dictionaries";
 import { company } from "@/lib/company-data";
+import Image from "next/image";
 
 export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const year = new Date().getFullYear();
@@ -10,12 +11,15 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
     <footer className="border-t border-blueprint bg-carbon text-paper">
       <div className="container-page grid gap-10 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Link href={`/${lang}`} className="flex items-center gap-3" aria-label="C.A.S. Infinity Group">
-            <span className="flex h-9 w-9 items-center justify-center rounded-sm bg-amber text-carbon font-display text-base font-extrabold">
-              C
-            </span>
-            <span className="font-display text-base font-bold">C.A.S. Infinity Group</span>
-          </Link>
+    <Link href={`/${lang}`} className="flex items-center gap-3" aria-label="Group  C.A.S infinity B.V.">
+      <Image
+          src="/images/logo.jpg"
+          alt="Group  C.A.S infinity B.V."
+          width={56}
+          height={56}
+          className="h-13 w-13 rounded-sm object-cover"
+        />
+      </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-stone-light">
             {dict.footer.description}
           </p>

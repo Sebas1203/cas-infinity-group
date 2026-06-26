@@ -2,17 +2,17 @@
  * Dirección y KvK-nummer confirmados por el cliente 
  */
 export const company = {
-  legalName: "C.A.S. Infinity Group B.V.",
-  brandName: "C.A.S. Infinity Group",
-  kvkNumber: "90962079",
-  address: {
+  legalName: "Group C.A.S. Infinity B.V.",// nombre legal confirmado por el cliente
+  brandName: "C.A.S. Infinity Group", // nombre de la marca confirmada por el cliente
+  kvkNumber: "90962079", // KvK-nummer confirmado por el cliente
+  address: { // dirección confirmada por el cliente
     street: "Ringdijk 175",
     postalCode: "8244BJ",
     city: "Lelystad",
     country: "Nederland",
   },
-  phone: "+31 (6) 15478693 ", // TODO: confirmar número real
-  email: "info@casinfinitygroup.nl", // TODO: confirmar dominio/email real
+  phone: "+31 (6) 15478693 ", // numero de teléfono conformado por el cliente
+  email: "c.a.s.infinitygroup@gmail.com", // email conformado por el cliente
   social: {
     linkedin: "#",
     instagram: "#",

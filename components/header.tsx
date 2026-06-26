@@ -6,6 +6,8 @@ import { useState } from "react";
 import type { Locale } from "@/lib/i18n-config";
 import { i18n, localeNames } from "@/lib/i18n-config";
 import type { Dictionary } from "@/lib/dictionaries";
+import { ImageConfigContext } from "next/dist/server/route-modules/pages/vendored/contexts/entrypoints";
+import Image from "next/image";
 
 function getLocalizedPath(pathname: string, targetLocale: Locale) {
   const segments = pathname.split("/");
@@ -29,16 +31,15 @@ export default function Header({ lang, dict }: { lang: Locale; dict: Dictionary 
   return (
     <header className="sticky top-0 z-50 border-b border-blueprint bg-paper/95 backdrop-blur-sm">
       <div className="container-page flex h-20 items-center justify-between">
-        <Link href={`/${lang}`} className="flex items-center gap-3" aria-label="C.A.S. Infinity Group">
-          <span className="flex h-10 w-10 items-center justify-center rounded-sm bg-carbon text-amber font-display text-lg font-extrabold">
-            C
-          </span>
-          <span className="font-display text-lg font-bold leading-none tracking-tight">
-            C.A.S. Infinity
-            <span className="block text-[0.65rem] font-sans font-medium uppercase tracking-[0.18em] text-stone">
-              Group
-            </span>
-          </span>
+    <Link href={`/${lang}`} className="flex items-center gap-3" aria-label="Group  C.A.S infinity B.V.">
+  <Image
+        src="/images/logo.jpg"
+        alt="Group  C.A.S infinity B.V."
+        width={64}
+        height={64}
+       className="h-14 w-14 rounded-sm object-cover"
+        priority
+        />
         </Link>
 
         <nav className="hidden items-center gap-6 xl:flex" aria-label="Main navigation">
