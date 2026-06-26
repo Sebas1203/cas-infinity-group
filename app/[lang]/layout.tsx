@@ -1,23 +1,33 @@
+import type { ReactNode } from "react";
+import { i18n } from "@/lib/i18n-config";
+import { asLocale } from "@/lib/as-locale";
+import { getDictionary } from "@/lib/dictionaries";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { getDictionary } from "@/lib/dictionaries";
-import type { Locale } from "@/lib/i18n-config";
+import "../globals.css";
+
+export function generateStaticParams() {
+  return i18n.locales.map((lang) => ({ lang }));
+}
 
 export default async function LangLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  children: ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
+  const { lang: rawLang } = await params;
+  const lang = asLocale(rawLang);
   const dict = await getDictionary(lang);
 
   return (
-    <>
-      <Header lang={lang} dict={dict} />
-      {children}
-      <Footer lang={lang} dict={dict} />
-    </>
+    <html lang={lang}>
+      <body className="bg-paper text-carbon antialiased">
+        <Header lang={lang} dict={dict} />
+        <main>{children}</main>
+        <Footer lang={lang} dict={dict} />
+      </body>
+    </html>
   );
 }
