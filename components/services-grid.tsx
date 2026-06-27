@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n-config";
 import type { Dictionary } from "@/lib/dictionaries";
+import Image from "next/image";
+
 import {
   IconNewBuild,
   IconRenovation,
@@ -9,12 +11,13 @@ import {
   IconMaintenance,
   IconProjectManagement,
 } from "@/components/icons";
+import { section } from "motion/react-client";
 
 const icons = [IconNewBuild, IconRenovation, IconExtension, IconInfrastructure, IconMaintenance, IconProjectManagement];
 
 export default function ServicesGrid({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
-    <section className="bg-mist py-20 md:py-28">
+    <section  className="bg-mist py-20 md:py-28">
       <div className="container-page">
         <div className="max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-[0.14em] text-amber-deep">
@@ -51,6 +54,10 @@ export default function ServicesGrid({ lang, dict }: { lang: Locale; dict: Dicti
           </Link>
         </div>
       </div>
+
+      
     </section>
+    
+      
   );
 }

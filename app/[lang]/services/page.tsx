@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { asLocale } from "@/lib/as-locale";
 import { getDictionary } from "@/lib/dictionaries";
 import { buildMetadata } from "@/lib/seo";
@@ -50,6 +51,58 @@ export default async function ServicesPage({
             {dict.servicesPage.title}
           </h1>
           <p className="mt-6 text-base leading-relaxed text-stone md:text-lg">{dict.servicesPage.intro}</p>
+        </div>
+
+        <div className="container-page mt-12 grid grid-cols-4 gap-3 md:grid-cols-6 md:gap-4">
+          <div className="relative col-span-2 row-span-2 aspect-square overflow-hidden rounded-sm md:col-span-3">
+            <Image
+              src="/images/banos.modernos.13.jpg"
+              alt= "Renovatieproject"
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+
+          <div className="relative col-span-2 aspect-square overflow-hidden rounded-sm md:col-span-3">
+            <Image
+              src="/images/renovationhome.jpg"
+              alt="Renovatieproject"
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+
+          <div className="relative col-span-2 aspect-square overflow-hidden rounded-sm md:col-span-2">
+            <Image
+              src="/images/renovationhome2.jpg"
+              alt="Renovatieproject"
+              fill
+              sizes="(max-width: 768px) 50vw, 25vw"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+
+          <div className="relative col-span-2 aspect-square overflow-hidden rounded-sm md:col-span-4">
+            <Image
+              src="/images/renovationlocal.png"
+              alt="Renovatieproject"
+              fill
+              sizes="(max-width: 768px) 50vw, 50vw"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+
+          </div>
+           <div className="relative col-span-2 aspect-square overflow-hidden rounded-sm md:col-span-5">
+            <Image
+              src="/images/luxuryinterior.png"
+              alt="Renovatieproject"
+              fill
+              sizes="(max-width: 600px) 50vw, 50vw"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
         </div>
       </section>
 

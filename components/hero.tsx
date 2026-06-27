@@ -80,5 +80,8 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary })
         }
       `}</style>
     </section>
+
+  
+
   );
 }
