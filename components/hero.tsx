@@ -9,6 +9,7 @@ import type { Dictionary } from "@/lib/dictionaries";
 const heroImages = [
   "/images/istockphoto1.jpg",
   "/images/istockphoto2.jpg",
+  "/images/depositphotos_204511130-stock-photo-high-angle-view-builders-architect.jpg",
 ];
 
 export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
