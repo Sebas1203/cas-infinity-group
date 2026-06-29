@@ -27,7 +27,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: "Website <onboarding@resend.dev>",
+      from: "Website <noreply@casinfinitygroup.nl>",
       to: NOTIFICATION_EMAIL,
       replyTo: email,
       subject: `Nuevo contacto desde la web: ${name}`,
