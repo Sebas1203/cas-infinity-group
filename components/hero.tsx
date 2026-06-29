@@ -7,9 +7,10 @@ import type { Locale } from "@/lib/i18n-config";
 import type { Dictionary } from "@/lib/dictionaries";
 
 const heroImages = [
-  "/images/istockphoto1.jpg",
-  "/images/istockphoto2.jpg",
-  "/images/depositphotos_204511130-stock-photo-high-angle-view-builders-architect.jpg",
+  "/images/magnific_ingenieros-realizando-pla_hEDg6wtvqL.png",
+  "/images/magnific_ingenieros-trabajando-en-_iAUoQtv3uK.png",
+  "/images/magnific_casas-en-construccion-eur_swHcQYRl8e.png",
+  "/images/magnific_casas-en-construccion-eur_NZgIsBE6D9.png",
 ];
 
 export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
@@ -24,7 +25,7 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary })
   }, []);
 
   return (
-    <section className="relative min-h-[520px] overflow-hidden bg-carbon">
+    <section className="relative min-h-[720px] overflow-hidden bg-carbon">
       <Image
         key={heroImages[currentImage]}
         src={heroImages[currentImage]}
@@ -34,7 +35,7 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary })
         sizes="100vw"
         className="absolute inset-0 z-0 object-cover transition-all duration-1000 ease-in-out"
         style={{
-          animation: "heroZoom 3s ease-in-out forwards",
+          animation: "heroZoom 4s ease-in-out forwards",
         }}
       />
 
