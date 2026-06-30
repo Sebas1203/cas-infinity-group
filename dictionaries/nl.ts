@@ -35,15 +35,15 @@ const nl = {
     contact: "Contact",
     cta: "Neem contact op",
   },
-  hero: {
-    eyebrow: "Bouwbedrijf in Nederland",
-    title: "Wij bouwen aan uw dromen",
-    subtitle:
-      "Van fundering tot afwerking: wij realiseren nieuwbouw, renovaties en aanbouwen op maat.",
-    ctaPrimary: "Vraag een offerte aan",
-    ctaSecondary: "Bekijk onze diensten",
-    badge: "Betrouwbare bouwpartner",
-  },
+ hero: {
+  eyebrow: "Bouwbedrijf in Nederland",
+  title: "Bouwbedrijf in Nederland — Wij bouwen jouw droom",
+  subtitle:
+    "Van fundering tot oplevering: wij verzorgen nieuwbouw, renovaties en op maat gemaakte uitbreidingen.",
+  ctaPrimary: "Vraag een offerte aan",
+  ctaSecondary: "Bekijk onze diensten",
+  badge: "Betrouwbare bouwpartner",
+},
   intro: {
     title: "Vakmanschap en betrouwbaarheid",
     body:

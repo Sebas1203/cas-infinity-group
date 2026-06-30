@@ -35,15 +35,15 @@ const de = {
     contact: "Kontakt",
     cta: "Kontakt aufnehmen",
   },
-  hero: {
-    eyebrow: "Bauunternehmen in den Niederlanden",
-    title: "Wir bauen an Ihren Träumen",
-    subtitle:
-      "Vom Fundament bis zur Fertigstellung: Wir realisieren Neubauten, Renovierungen und maßgeschneiderte Anbauten.",
-    ctaPrimary: "Angebot anfordern",
-    ctaSecondary: "Unsere Leistungen ansehen",
-    badge: "Vertrauenswürdiger Baupartner",
-  },
+hero: {
+  eyebrow: "Bauunternehmen in den Niederlanden",
+  title: "Bauunternehmen in den Niederlanden — Wir bauen Ihre Träume",
+  subtitle:
+    "Von der Grundlage bis zur Fertigstellung: Neubauten, Renovierungen und maßgeschneiderte Erweiterungen.",
+  ctaPrimary: "Angebot anfordern",
+  ctaSecondary: "Unsere Leistungen ansehen",
+  badge: "Vertrauenswürdiger Baupartner",
+},
   intro: {
     title: "Handwerkskunst und Zuverlässigkeit",
     body:

@@ -35,15 +35,15 @@ const en = {
     contact: "Contact",
     cta: "Get in touch",
   },
-  hero: {
-    eyebrow: "Construction company in the Netherlands",
-    title: "We build your dreams",
-    subtitle:
-      "From foundation to finish: we deliver new builds, renovations and tailor-made extensions.",
-    ctaPrimary: "Request a quote",
-    ctaSecondary: "View our services",
-    badge: "Trusted building partner",
-  },
+ hero: {
+  eyebrow: "Construction company in the Netherlands",
+  title: "Construction company in the Netherlands — We build your dreams",
+  subtitle:
+    "From foundation to finish: we deliver new builds, renovations and tailor-made extensions.",
+  ctaPrimary: "Request a quote",
+  ctaSecondary: "View our services",
+  badge: "Trusted building partner",
+},
   intro: {
     title: "Craftsmanship and reliability",
     body:
