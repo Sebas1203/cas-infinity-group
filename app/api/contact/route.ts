@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 
-const NOTIFICATION_EMAIL = "sebastianlondono74@gmail.com"; // Cambia esto al correo electrónico donde deseas recibir las notificaciones
+const NOTIFICATION_EMAIL = "c.a.s.infinitygroup@gmail.com";
 
 export async function POST(request: Request) {
   try {
