@@ -36,8 +36,8 @@ const nl = {
     cta: "Neem contact op",
   },
  hero: {
-  eyebrow: "Bouwbedrijf in Nederland",
-  title: "Bouwbedrijf in Nederland — Wij bouwen jouw droom",
+  eyebrow: "Aannemer in Nederland",
+  title: "Aannemer in Nederland — Wij bouwen jouw droom",
   subtitle:
     "Van fundering tot oplevering: wij verzorgen nieuwbouw, renovaties en op maat gemaakte uitbreidingen.",
   ctaPrimary: "Vraag een offerte aan",

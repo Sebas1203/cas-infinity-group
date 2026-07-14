@@ -85,11 +85,19 @@ const en = {
         title: "Groundwork & Infrastructure",
         description:
           "We handle all preparatory work such as earthworks, sewage, foundations and paving, so every project starts on solid ground.",
+        
       },
       {
         title: "Project Management",
         description:
           "From permits to handover: we manage your construction project fully and keep you informed at every step.",
+      },
+
+   
+      {
+        title: "Bunker Construction",
+        description:
+        "We design and build secure, high-strength bunkers tailored to each client's needs, ensuring maximum protection, durability, and quality.",
       },
     ],
     cta: "View all services",

@@ -4,7 +4,7 @@ import { asLocale } from "@/lib/as-locale";
 import { getDictionary } from "@/lib/dictionaries";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import "../globals.css";
+
 
 export function generateStaticParams() {
   return i18n.locales.map((lang) => ({ lang }));

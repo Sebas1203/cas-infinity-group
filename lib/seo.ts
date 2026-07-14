@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { i18n, localeHreflang, type Locale } from "./i18n-config";
 
-export const siteUrl = "https://casinfinitygroup.nl"; // TODO: confirmar dominio final con el cliente
+export const siteUrl = "https://casinfinitygroup.nl"; 
 
 export function buildAlternates(path: string) {
   const languages: Record<string, string> = {};

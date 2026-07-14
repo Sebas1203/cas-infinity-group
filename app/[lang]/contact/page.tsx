@@ -24,9 +24,9 @@ export async function generateMetadata({
 export default async function ContactPage({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
-  const { lang: rawLang } = await params;
+  const { lang: rawLang } =  params;
   const lang = asLocale(rawLang);
   const dict = await getDictionary(lang);
   const p = dict.contactPage;
