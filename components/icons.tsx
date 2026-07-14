@@ -68,11 +68,59 @@ export function IconProjectManagement({ className }: IconProps) {
 }  
   
 export function IconBunkerConstruction({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true">
-      <path d="M4 24h24" stroke="currentColor" strokeWidth="1.6" />
-      <path d="M7 24V16M13 24V11M19 24V14M25 24V18" stroke="currentColor" strokeWidth="1.6" />
-      <path d="M4 11l12-6 12 6" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+
+    return (
+    <svg
+      viewBox="0 0 32 32"
+      fill="none"
+      className={className}
+      aria-hidden="true"
+    >
+      {/* Base del bunker */}
+      <rect
+        x="5"
+        y="12"
+        width="22"
+        height="14"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+
+      {/* Entrada reforzada */}
+      <rect
+        x="12"
+        y="17"
+        width="8"
+        height="9"
+        rx="1"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+
+      {/* Techo */}
+      <path
+        d="M9 12V8h14v4"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+
+      {/* Ventilación */}
+      <path
+        d="M16 8V5"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+
+      {/* Refuerzo */}
+      <path
+        d="M9 19h14"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
