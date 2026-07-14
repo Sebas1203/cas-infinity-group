@@ -91,6 +91,10 @@ hero: {
         description:
           "Von der Genehmigung bis zur Übergabe: Wir begleiten Ihr Bauprojekt vollständig und halten Sie jederzeit auf dem Laufenden.",
       },
+      {
+        title: "Bunker Construction",
+        description: "Wir entwickeln und bauen sichere und robuste Bunker für verschiedene Anwendungen, mit Fokus auf Qualität und Sicherheit.",
+      }
     ],
     cta: "Alle Leistungen ansehen",
   },

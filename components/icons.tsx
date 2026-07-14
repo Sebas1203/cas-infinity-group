@@ -65,4 +65,15 @@ export function IconProjectManagement({ className }: IconProps) {
       <path d="M10 12h12M10 17h12M10 22h7" stroke="currentColor" strokeWidth="1.6" />
     </svg>
   );
+}  
+  
+export function IconBunkerConstruction({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true">
+      <path d="M4 24h24" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M7 24V16M13 24V11M19 24V14M25 24V18" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M4 11l12-6 12 6" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    </svg>
+  );
 }
+

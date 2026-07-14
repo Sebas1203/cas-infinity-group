@@ -92,8 +92,6 @@ const en = {
         description:
           "From permits to handover: we manage your construction project fully and keep you informed at every step.",
       },
-
-   
       {
         title: "Bunker Construction",
         description:

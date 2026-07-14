@@ -11,9 +11,10 @@ import {
   IconInfrastructure,
   IconMaintenance,
   IconProjectManagement,
+  IconBunkerConstruction
 } from "@/components/icons";
 
-const icons = [IconNewBuild, IconExtension, IconRenovation, IconMaintenance, IconInfrastructure, IconProjectManagement];
+const icons = [IconNewBuild, IconExtension, IconRenovation, IconMaintenance, IconInfrastructure, IconProjectManagement, IconBunkerConstruction];
 
 export async function generateMetadata({
   params,

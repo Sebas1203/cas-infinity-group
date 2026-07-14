@@ -10,10 +10,11 @@ import {
   IconInfrastructure,
   IconMaintenance,
   IconProjectManagement,
+  IconBunkerConstruction
 } from "@/components/icons";
 import { section } from "motion/react-client";
 
-const icons = [IconNewBuild, IconRenovation, IconExtension, IconInfrastructure, IconMaintenance, IconProjectManagement];
+const icons = [IconNewBuild, IconRenovation, IconExtension, IconInfrastructure, IconMaintenance, IconProjectManagement, IconBunkerConstruction];
 
 export default function ServicesGrid({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (

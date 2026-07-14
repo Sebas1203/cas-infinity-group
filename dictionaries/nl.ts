@@ -91,6 +91,10 @@ const nl = {
         description:
           "Van vergunningstraject tot oplevering: wij begeleiden uw bouwproject volledig en houden u op elk moment op de hoogte.",
       },
+      {
+        title: "Bunker Construction",
+        description: "Wij ontwerpen en bouwen veilige en duurzame bunkers voor diverse toepassingen, met oog voor kwaliteit en veiligheid.",
+      }
     ],
     cta: "Alle diensten bekijken",
   },

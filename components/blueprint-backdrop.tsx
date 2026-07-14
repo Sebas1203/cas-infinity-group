@@ -1,10 +1,4 @@
-/**
- * Placeholder visual hasta que el cliente entregue fotografía real de obra.
- * Patrón tipo "plano técnico" (grid + líneas de cota) que conecta con el
- * sector de la construcción sin depender de stock photography externo.
- * Sustituir por foto real en /public/images/hero-construction.jpg cuando
- * esté disponible (ver componente Hero).
- */
+
 export default function BlueprintBackdrop({ className = "" }: { className?: string }) {
   return (
     <svg
