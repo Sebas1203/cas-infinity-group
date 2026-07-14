@@ -11,6 +11,10 @@ const heroImages = [
   "/images/magnific_ingenieros-trabajando-en-_iAUoQtv3uK.png",
   "/images/magnific_casas-en-construccion-eur_swHcQYRl8e.png",
   "/images/magnific_casas-en-construccion-eur_NZgIsBE6D9.png",
+  "/images/imagen1.jpg",
+  "/images/imagen2.jpg",
+  "/images/imagen3.jpg",
+  "/images/imagen4.jpg",
 ];
 
 export default function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
